@@ -1,0 +1,1320 @@
+:: StoryTitle
+Joust Day
+
+
+:: StoryData
+{
+  "ifid": "5CDD439B-A134-4601-8C4D-71E12FB65EDA",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "First Tablet",
+  "tag-colors": {
+    "room": "orange"
+  },
+  "zoom": 0.6
+}
+
+
+:: Armoury {"position":"875,550","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+Pietro finds himself in the armoury of his master, the knight Annibale II Bentivoglio. By the light of the burning torch Pietro is holding, he can see a relatively small room with various armour hanging on the walls. In the corner of the room there is a couch, from which an elderly guard rises and adresses Pietro.
+
+**Guard:** Are you from sir Bentivoglio?
+
+**Pietro:** Yes, I am his new squire. For today's tournament, I have been tasked with selecting equipment for my lord.
+
+**Guard:** All right, if I am not mistaken, today is a special day for you, when the fate of your future service will be decided. Well, so be it... Since you're new to this, I'll tell you what's here.
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_armoury.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Listen to the guard's story->Guard's story1]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/guard.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: Congrats {"position":"2200,1500","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+**Stableman:** Well done, Pietro! Although it wasn't easy, you answered all the questions correctly and earned **$score out of $score** points. Cordially congratulate you! Now you can rightfully call yourself Signor Bentivoglio's squire! Run to him now, my boy!
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_congrats.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Continue->End of the story]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/stableman.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: End of the game {"position":"2600,1500","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+Congratulations! You have helped Pietro become a true squire. Signor Bentivoglio is pleased with the work of his new squire, and Pietro will remain at the castle.
+<style>
+
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_end_game.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+
+</style>
+End of the game</div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/end_game.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: End of the story {"position":"2400,1400","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+Pietro step back into the courtyard, the testiera tucks under one arm and the sella da parata balances against his hip. Straw crackles underfoot. Then a clear blast of the hunting horn cut the morning air, once, twice. The joust will start soon.
+He breaks into a run.
+At the palazzo steps he catch sight of Annibale II already in the lists’ half-light, pages bustling like swallows. Pietro puts the testiera on the charger’s head, set the plume in the rosette, buckles the cheek plates, and fasten the saddle tight. He checks the resta, offers the lance, and whispers the motto he had learned: Nunc michi.
+“Ready, my lord.”
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_end1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Continue->End of the game]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/end_game.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: First Tablet [room] {"position":"675,300","size":"100,100"}
+//''You start the first part of the "Joust Day: Bentivoglio Challenge" gamified experience''.//
+
+<div style="text-align: center" id="lang">
+  <label for="language">Choose the language:</label>
+  <select id="language" name="language">
+    <option value="en">English</option>
+    <option value="it">Italian</option>
+  </select>
+<br>
+  (link: "Select")[
+    (goto: "Intro")
+  ]
+</div>
+<style>
+  tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/first_tablet.jpg?raw=true");
+background-size:cover;
+background-position: center;
+}
+  #lang {
+    font-family: Roboto, sans-serif;
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+option {
+	color: black;
+}
+
+  button {
+    width: 100%;
+    padding: 7px;
+    background-color: #d6b25e;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+
+
+:: Guard — Question1 {"position":"1200,500","size":"100,100"}
+**Guard**: "First, a general question: why is the left side of the armour different from the right?"
+
+(set: $answered to false)
+
+(link-repeat: "Because a horse’s gait pulls the rider to the right, so extra metal is added to balance the body.")[
+	(if: not $answered)[
+		(set: $q1result to "wrong. Our lord's horse has a perfect gait!")
+		(set: $answered to true)
+		(goto: "Q1 — Feedback")
+	]
+]
+
+(link-repeat: "This is because opponents stand to the left of each other in the joust, so their blows land on the left side, which is specially protected to better withstand the blow.")[
+	(if: not $answered)[
+		(set: $q1result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q1 — Feedback")
+	]
+]
+
+(link-repeat: "Because knights wear a heavy shield on the left, so that side is made lighter to compensate.")[
+	(if: not $answered)[
+		(set: $q1result to "wrong. With such armour, you will not use a shield.")
+		(set: $answered to true)
+		(goto: "Q1 — Feedback")
+	]
+]
+
+(link-repeat: "Because the body of the knight for whom this armour was made was asymmetrical.")[
+	(if: not $answered)[
+		(set: $q1result to "wrong. What are you saying? Our lord has the beautiful and harmonious body of Apollo.")
+		(set: $answered to true)
+		(goto: "Q1 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_st1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Guard — Question2 {"position":"1200,700","size":"100,100"}
+**Guard**: "Why are the gauntlets not the same?"
+
+(set: $answered to false)
+
+(link-repeat: "Because the left gauntlet is shaped for the reins, and the right is built to stabilize the lance.")[
+	(if: not $answered)[
+		(set: $q2result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q2 — Feedback")
+	]
+]
+
+(link-repeat: "Because the right hand needs to draw a sword while the left carries the shield.")[
+	(if: not $answered)[
+		(set: $q2result to "wrong. In the joust, the lance not the sword is primary, and there is no shield on the left.")
+		(set: $answered to true)
+		(goto: "Q2 — Feedback")
+	]
+]
+
+(link-repeat: "Because the smith had no matching plates and used what was available.")[
+	(if: not $answered)[
+		(set: $q2result to "wrong. The mismatch is intentional and functional, not due to shortage of materials.")
+		(set: $answered to true)
+		(goto: "Q2 — Feedback")
+	]
+]
+
+(link-repeat: "Because lighter right-hand armor makes riding faster.")[
+	(if: not $answered)[
+		(set: $q2result to "wrong. The differences in weight are due to their functions. Think about what those functions might be.")
+		(set: $answered to true)
+		(goto: "Q2 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_st1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Guard — Question3 {"position":"1200,900","size":"100,100"}
+**Guard**: "What is the purpose of this sturdy metal hook that sits on the right breast?"
+
+(set: $answered to false)
+
+(link-repeat: "This is a decorative element, you can insert a flower here, dedicated to the lady of the knight's heart.")[
+	(if: not $answered)[
+		(set: $q3result to "wrong. What romantic nonsense!")
+		(set: $answered to true)
+		(goto: "Q3 — Feedback")
+	]
+]
+
+(link-repeat: "This is additional protection for the most vulnerable areas.")[
+	(if: not $answered)[
+		(set: $q3result to "wrong. But it's an interesting one!")
+		(set: $answered to true)
+		(goto: "Q3 — Feedback")
+	]
+]
+
+(link-repeat: "This is the lance rest, it supports the weapon of a knight on impact.")[
+	(if: not $answered)[
+		(set: $q3result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q3 — Feedback")
+	]
+]
+
+(link-repeat: "The smith decided to be original and attached these useless hooks to the armour.")[
+	(if: not $answered)[
+		(set: $q3result to "wrong. Our lord would not forgive the smith for such antics.")
+		(set: $answered to true)
+		(goto: "Q3 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_st1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Guard — Question4 {"position":"2000,700","size":"100,100"}
+**Guard**: "What is this blade called and where does the name come from?"
+
+(set: $answered to false)
+
+(link-repeat: "It's called yatagan, the name originates from the Chinese language.")[
+	(if: not $answered)[
+		(set: $q4result to "wrong. Have you been listening to me at all?")
+		(set: $answered to true)
+		(goto: "Q4 — Feedback")
+	]
+]
+
+(link-repeat: "This is rapier. The name comes from spanish 'romper'(to break) and indicates that this blade can easily break an opponent.")[
+	(if: not $answered)[
+		(set: $q4result to "wrong. Our lord would not keep a Spanish blade")
+		(set: $answered to true)
+		(goto: "Q4 — Feedback")
+	]
+]
+
+(link-repeat: "It's called cinquedea. The name literally means ‘five fingers’ and originated because the blade resembles five fingers in shape (wide at the base, tapering sharply towards the top).")[
+	(if: not $answered)[
+		(set: $q4result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q4 — Feedback")
+	]
+]
+
+(link-repeat: "It's called cinquedea. It is called this because this blade can pierce five opponents at once.")[
+	(if: not $answered)[
+		(set: $q4result to "wrong. You got the name right. But what a silly explanation!")
+		(set: $answered to true)
+		(goto: "Q4 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_st2.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Guard — Question5 {"position":"2000,900","size":"100,100"}
+**Guard**: "What does 'NUNCH MICHI' inscription mean?"
+
+(set: $answered to false)
+
+(link-repeat: "This is the name of the blade in french.")[
+	(if: not $answered)[
+		(set: $q5result to "wrong. Have you been listening to me at all?")
+		(set: $answered to true)
+		(goto: "Q5 — Feedback")
+	]
+]
+
+(link-repeat: "This is Signor Annibale's motto in Latin, meaning 'now it's my moment'.")[
+	(if: not $answered)[
+		(set: $q5result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q5 — Feedback")
+	]
+]
+
+(link-repeat: "This is Signor Annibale's motto in Latin, meaning 'nothing is impossible'")[
+	(if: not $answered)[
+		(set: $q5result to "wrong. Latin is worth learning for you.")
+		(set: $answered to true)
+		(goto: "Q5 — Feedback")
+	]
+]
+
+(link-repeat: "This is our lord's name in Latin")[
+	(if: not $answered)[
+		(set: $q5result to "wrong. However this is indeed Latin!")
+		(set: $answered to true)
+		(goto: "Q5 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_st2.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Guard — Question6 {"position":"2000,1100","size":"100,100"}
+**Guard**: "What's in the pictures?"
+
+(set: $answered to false)
+
+(link-repeat: "Here are depicted the relatives of Signor Bentivoglio.")[
+	(if: not $answered)[
+		(set: $q6result to "wrong. Have you been listening to me at all?")
+		(set: $answered to true)
+		(goto: "Q6 — Feedback")
+	]
+]
+
+(link-repeat: "Various scenes from Homer's 'Iliad' are depicted here.")[
+	(if: not $answered)[
+		(set: $q6result to "wrong. Although these images clearly recall the ancient era.")
+		(set: $answered to true)
+		(goto: "Q6 — Feedback")
+	]
+]
+
+(link-repeat: "The pictures show the lady of our Signor's heart.")[
+	(if: not $answered)[
+		(set: $q6result to "wrong. Take a close look at the images.")
+		(set: $answered to true)
+		(goto: "Q6 — Feedback")
+	]
+]
+
+(link-repeat: "The imagery echoes chivalric themes of fury, fortune, and virtue familiar from heroic literature.")[
+	(if: not $answered)[
+		(set: $q6result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q6 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_st2.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Guard's story1 {"position":"1050,550","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+The old guard raises the torch so its light slides across a harness mounted on a wooden stand.
+
+**Guard:** Look and remember sharp, boy. This isn’t parade steel, it’s made for the lists.
+
+**Pietro:** Got you!
+
+**Guard:**  You see the tilt-rail out there? In the tourney each rider keeps the barrier to his left and charges with the lance. That means the enemy’s point comes from your lord’s left side, so the whole harness is biased to meet it. The helmet is stiffened on the left, thicker and less forgiving, to shrug a glancing blow. For the same reason the left ellbow is also reinforced.
+Now look to the right breast. The resta, the lance rest. When Signor Bentivoglio sets his weapon, this hook bears the shock so his arm doesn’t have to.
+
+**Pietro:**  And what about the gauntlets?
+
+**Guard:** The hands don’t match, and that’s not mistake. The left gauntlet is shaped for the reins, slimmer at the palm so he can feel the horse. The right is built to cradle and steady the lance, broader across the knuckles, a little flatter.
+
+**Pietro:** And the feet? The stirrups look strange...
+
+**Guard:** Not simple stirrups, staffoni! You slide the sabatons into these and they lock you down, seat and leg as one. When a lance strikes, that grip keeps a knight in the saddle. That’s a jouster’s harness. If your lord rides today, he rides in this.
+
+**Pietro:** Perfect, then shall I take this armour?
+
+**Guard:** Hold on, it's not that simple, youngster! First, I need to make sure you're a good squire! Let's see how carefully you've been listening to me.
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_armoury_1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Answer the guard's questions->Guard — Question1]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/guard.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: Guard's story2 {"position":"1800,600","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+**Guard:** Come closer, lad. If you’re to serve Signor Bentivoglio, you must know this blade. Not just any blade, a cinquedea, five fingers, for the width of the blade where it meets the hilt. See how it starts broad at the heel and runs quick to a narrow point? Short like a dagger, but it bites like a hawk. It lives on the left hip for quick work in close quarters.
+
+**Pietro:** And what does it say here?
+
+**Guard:** Look here at the hilt. That eagle is our house, and the Latin device NUNC MICHI means ‘now it is my moment.’
+Along the blade you can notice shallow grooves, fullers. They aren’t empty, the smith cut fine inscriptions and tiny scenes into them.
+
+**Pietro:** What do these images mean?
+
+**Guard:** This is called an allegory. Here you can see fury that drives men forward, fortune that turns without warning, and virtue that inspires a knight to do good deeds. Those are not decorations, they’re reminders.
+This is a luxury weapon, finely finished end to end, made to be seen and used. The style looks back to the ancients on purpose. One could say it is a little "Iliad". Signor Bentivoglio can wear it at his belt.
+
+**Pietro:** It's a true work of art! Today this blade will bring good fortune to our lord!
+
+**Guard:** Yes, that's right, but before I give it to you, let's check how well you've remembered everything.
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_st2.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Answer the guard's questions->Guard — Question4]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/guard.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: Intro {"position":"875,300","size":"100,100"}
+<div style="text-align: center; font-size: 25px">Pietro, a fifteen-year-old squire, entered the service of Signor Annibale II Bentivoglio a month ago, and today his probationary period is coming to an end. How well Pietro performs on the day of the knight tournament will determine whether Signor Bentivoglio keeps Pietro as his squire.
+The bells of San Petronio had barely finished their first peal when Pietro headed for the armory of Palazzo Bentivoglio. Annibale II, condottiere, heir to a name that ruled Bologna in living memory, would ride today before the city’s nobles. Jousts were more than sport, they were an important ritual for gaining glory and asserting one's power. Pietro knew it, and so did his lord.
+
+Well, are you ready to help Pietro prove himself a worthy squire so that he can remain in the service of Signor Bentivoglio?  So, let's accompany Pietro to the knight's armoury and help him choose the right equipment for his lord.
+<style>
+
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/intro_Bologna.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+
+</style>
+<div class="cta-br">
+[[Go to the armoury->On the way to armoury]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/bells.mp3?raw=true" type="audio/mp3">
+</audio>
+
+
+:: On the way to armoury {"position":"875,425","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+Pietro walks down a long, dark corridor, with burning torches hanging on the walls, illuminating the dark corridor. Between the torches hang various paintings depicting portraits of members of the Bentivoglio family, as well as scenes on military and hunting themes. Pietro reaches the end of the corridor and stops at a wrought-iron door.
+
+Shall we take the key out of pocket and go through this door?
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_to_armoury.jpg?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Enter the armoury->Armoury]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/corridor.mp3?raw=true" type="audio/mp3">
+</audio>
+
+
+:: On the way to weapons room {"position":"1600,1000","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+The guard and the squire leave the room with the armour, and the guard locks the door. Then, by torchlight, they walk a short distance down the corridor and stop in front of another wrought-iron door.
+
+**Guard:** Well, Pietro, we are heading to the weapons room. You are about to see something very important to the Bentivoglio family. Are you ready?
+
+**Pietro:** Yes, it's a very exciting moment! 
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_to_weapons_room.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Enter the weapons room->Weapons room]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/corridor.mp3?raw=true" type="audio/mp3">
+</audio>
+
+
+:: On way to stables {"position":"1700,1300","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+Cradling the torch’s fading smell of resin, Pietro bows to the guard and slips from the weapons room. The corridor breathes cold, torchlight shivering across stone and Bentivoglio banners as he quickens his pace. Outside, morning air tastes of straw and smoke. He crosses the courtyard, skirts a cart of provisions, and breaks into a trot toward the stables.
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_to_stables.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Enter the stables->Stables]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/medieval_city.mp3?raw=true" type="audio/mp3">
+</audio>
+
+
+:: Q1 — Feedback {"position":"1400,600","size":"100,100"}
+(if: $q1result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Guard:'' Exactly! Onward to the next question?
+[[Continue ->Guard — Question2]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Guard:'' $q1result Think again!
+[[Retry this question ->Guard — Question1]]
+]
+
+
+:: Q10 — Feedback {"position":"1600,1600","size":"100,100"}
+(if: $q10result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Stableman:'' Exactly! Let's move on!
+[[Continue ->Stableman — Question5]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Stableman:'' $q10result Think again!
+[[Retry this question ->Stableman — Question4]]
+]
+
+
+:: Q11 — Feedback {"position":"1800,1600","size":"100,100"}
+(if: $q11result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Stableman:'' Exactly! Let's move on!
+[[Continue ->Stableman — Question6]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Stableman:'' $q11result Think again!
+[[Retry this question ->Stableman — Question5]]
+]
+
+
+:: Q12 — Feedback {"position":"2000,1600","size":"100,100"}
+(if: $q12result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Stableman:'' Good boy! Take the saddle, you're the decent squire!
+[[Continue ->Congrats]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Stableman:'' $q12result Think again!
+[[Retry this question ->Stableman — Question6]]
+]
+
+
+:: Q2 — Feedback {"position":"1400,800","size":"100,100"}
+(if: $q2result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Guard:'' Good boy, way to go!
+[[Continue ->Guard — Question3]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Guard'' $q2result So be it, you have one more try!
+[[Retry this question ->Guard — Question2]]
+]
+
+
+:: Q3 — Feedback {"position":"1400,1000","size":"100,100"}
+(if: $q3result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Guard:'' Well, you did it! You can take the armour.  Now it's time to think about the weapons.
+[[Continue ->On the way to weapons room]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Guard:'' $q3result Come on, think carefully!
+[[Retry this question ->Guard — Question3]]
+]
+
+
+:: Q4 — Feedback {"position":"2200,800","size":"100,100"}
+(if: $q4result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback2.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Guard:'' Well done! Let's move on!
+[[Continue ->Guard — Question5]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback3.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Guard:'' $q4result Try again!
+[[Retry this question ->Guard — Question4]]
+]
+
+
+:: Q5 — Feedback {"position":"2200,1000","size":"100,100"}
+(if: $q5result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback2.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Guard:'' Well done! Let's move on!
+[[Continue ->Guard — Question6]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback3.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Guard:'' $q5result You have one more try!
+[[Retry this question ->Guard — Question5]]
+]
+
+
+:: Q6 — Feedback {"position":"2200,1200","size":"100,100"}
+(if: $q6result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback2.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Guard:'' Well, you're making good progress, take the blade! Go to the stables and take care of the equipment for Signor Annibale's horse.
+[[Continue ->Second Tablet]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_guard_feedback3.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Guard:'' $q6result You have one more try!
+[[Retry this question ->Guard — Question6]]
+]
+
+
+:: Q7 — Feedback {"position":"900,1300","size":"100,100"}
+(if: $q7result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Stableman:'' Exactly! Onward to the next question?
+[[Continue ->Stableman — Question2]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Stableman:'' $q7result Think again!
+[[Retry this question ->Stableman — Question1]]
+]
+
+
+:: Q8 — Feedback {"position":"900,1500","size":"100,100"}
+(if: $q8result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Stableman:'' Exactly! Onward to the next question?
+[[Continue ->Stableman — Question3]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Stableman:'' $q8result Think again!
+[[Retry this question ->Stableman — Question2]]
+]
+
+
+:: Q9 — Feedback {"position":"900,1700","size":"100,100"}
+(if: $q9result is "correct")[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback1.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+✅ ''Stableman:'' Exactly! Take the testiera.
+[[Continue ->Stableman — Story2]]
+]
+(else:)[
+<style>
+tw-story { background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_feedback0.png?raw=true"); background-size:cover;
+background-position: center;
+}
+</style>
+❌ ''Stableman:'' $q9result Think again!
+[[Retry this question ->Stableman — Question3]]
+]
+
+
+:: Second Tablet [room] {"position":"1900,1300","size":"100,100"}
+//You are activating the second part of the game//
+
+You'll learn about ''Horse head-armor and Sella da Parata alla moscovita''.
+
+Go to the [[Story->On way to stables]]
+<style>
+
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/intro_Bologna.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+
+</style>
+
+
+:: Stableman — Question1 {"position":"1100,1200","size":"100,100"}
+**Stableman**: "What is 'tortiglione' on this testiera?"
+
+(set: $answered to false)
+
+(link-repeat: "The twisted, spiral decorative pattern running through the central zone.")[
+	(if: not $answered)[
+		(set: $q7result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q7 — Feedback")
+	]
+]
+
+(link-repeat: "This is a hidden leather padding under the brow to soften impacts.")[
+	(if: not $answered)[
+		(set: $q7result to "wrong. It seems that someone wasn't listening to me very carefully.")
+		(set: $answered to true)
+		(goto: "Q7 — Feedback")
+	]
+]
+
+(link-repeat: "The seam where separate plates are riveted together.")[
+	(if: not $answered)[
+		(set: $q7result to "wrong. Try again!")
+		(set: $answered to true)
+		(goto: "Q7 — Feedback")
+	]
+]
+
+(link-repeat: "The iron alloy used to harden the cheek plates.")[
+	(if: not $answered)[
+		(set: $q7result to "wrong. Will you try again?")
+		(set: $answered to true)
+		(goto: "Q7 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_st1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Stableman — Question2 {"position":"1100,1400","size":"100,100"}
+**Stableman**: "Which parts are forged as one integral assembly on this headpiece?"
+
+(set: $answered to false)
+
+(link-repeat: "Nose-plate, removable visor, and detachable muzzle.")[
+	(if: not $answered)[
+		(set: $q8result to "wrong. It seems that someone wasn't listening to me very carefully.")
+		(set: $answered to true)
+		(goto: "Q8 — Feedback")
+	]
+]
+
+(link-repeat: "Reins, and curb chain")[
+	(if: not $answered)[
+		(set: $q8result to "wrong. Try again!")
+		(set: $answered to true)
+		(goto: "Q8 — Feedback")
+	]
+]
+
+(link-repeat: "Ear guards, eye cups, and cheek plates aligned with the horse’s cheeks.")[
+	(if: not $answered)[
+		(set: $q8result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q8 — Feedback")
+	]
+]
+
+(link-repeat: "Headpiece shell and saddle pommel.")[
+	(if: not $answered)[
+		(set: $q8result to "wrong. Will you try again?")
+		(set: $answered to true)
+		(goto: "Q8 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_st1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Stableman — Question3 {"position":"1100,1600","size":"100,100"}
+**Stableman**: "What is the purpose of the rosette at the center of the brow?"
+
+(set: $answered to false)
+
+(link-repeat: "It anchors the reins for tighter turning at speed.")[
+	(if: not $answered)[
+		(set: $q9result to "wrong. It seems that someone wasn't listening to me very carefully.")
+		(set: $answered to true)
+		(goto: "Q9 — Feedback")
+	]
+]
+
+(link-repeat: "It houses a small valve to ventilate the horse’s head.")[
+	(if: not $answered)[
+		(set: $q9result to "wrong. Try again!")
+		(set: $answered to true)
+		(goto: "Q9 — Feedback")
+	]
+]
+
+(link-repeat: "It holds a plume so the rider can be recognized in the lists.")[
+	(if: not $answered)[
+		(set: $q9result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q9 — Feedback")
+	]
+]
+
+(link-repeat: "It locks the visor down to protect the horse’s eyes.")[
+	(if: not $answered)[
+		(set: $q9result to "wrong. Try to remember what I told you!")
+		(set: $answered to true)
+		(goto: "Q9 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_st1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Stableman — Question4 {"position":"1500,1800","size":"100,100"}
+**Stableman**: "Why is this parade saddle type called alla moscovita?"
+
+(set: $answered to false)
+
+(link-repeat: "Because the seat has no rigid reinforcements and at the back splits into two inclined flaps.")[
+	(if: not $answered)[
+		(set: $q10result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q10 — Feedback")
+	]
+]
+
+(link-repeat: "Because it includes a high wooden pommel carved like a Moscow tower.")[
+	(if: not $answered)[
+		(set: $q10result to "wrong. It seems that someone wasn't listening to me very carefully.")
+		(set: $answered to true)
+		(goto: "Q10 — Feedback")
+	]
+]
+
+(link-repeat: "Because it is exclusively used by ambassadors traveling to Muscovy.")[
+	(if: not $answered)[
+		(set: $q10result to "wrong. Try again!")
+		(set: $answered to true)
+		(goto: "Q10 — Feedback")
+	]
+]
+
+(link-repeat: "Because its tree is wrapped in sable fur from Russia")[
+	(if: not $answered)[
+		(set: $q10result to "wrong. Will you try again?")
+		(set: $answered to true)
+		(goto: "Q10 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_st2.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Stableman — Question5 {"position":"1700,1800","size":"100,100"}
+**Stableman**: "In which regions is this saddle type particularly used?"
+
+(set: $answered to false)
+
+(link-repeat: "Spain, Portugal, and Sicily.")[
+	(if: not $answered)[
+		(set: $q11result to "wrong. It seems that someone wasn't listening to me very carefully.")
+		(set: $answered to true)
+		(goto: "Q11 — Feedback")
+	]
+]
+
+(link-repeat: "England, Scotland, and Ireland.")[
+	(if: not $answered)[
+		(set: $q11result to "wrong. Try again!")
+		(set: $answered to true)
+		(goto: "Q11 — Feedback")
+	]
+]
+
+(link-repeat: "German lands, France, and northern Italy.")[
+	(if: not $answered)[
+		(set: $q11result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q11 — Feedback")
+	]
+]
+
+(link-repeat: "Anatolia, the Levant, and North Africa.")[
+	(if: not $answered)[
+		(set: $q11result to "wrong. Will you try again?")
+		(set: $answered to true)
+		(goto: "Q11 — Feedback")
+	]
+]
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_st2.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Stableman — Question6 {"position":"1900,1800","size":"100,100"}
+**Stableman**: "What are the main materials and themes decorating this saddle?"
+
+(set: $answered to false)
+
+(link-repeat: "Stamped leather with hunting dogs and a French proverb about luck.")[
+	(if: not $answered)[
+		(set: $q12result to "wrong. It seems that someone wasn't listening to me very carefully.")
+		(set: $answered to true)
+		(goto: "Q12 — Feedback")
+	]
+]
+
+(link-repeat: "Carved and painted ivory with courtly and chivalric scenes (a gentleman and a lady in contemporary dress).")[
+	(if: not $answered)[
+		(set: $q12result to "correct")
+		(set: $score to $score + 1)
+		(set: $answered to true)
+		(goto: "Q12 — Feedback")
+	]
+]
+
+(link-repeat: "Velvet upholstery embroidered with saints and an Italian inscription about charity.")[
+	(if: not $answered)[
+		(set: $q12result to "wrong. Try again!")
+		(set: $answered to true)
+		(goto: "Q12 — Feedback")
+	]
+]
+
+
+(link-repeat: "Gilded bronze plates with scenes of ancient Roman gladiators and a Latin motto from Virgil.")[
+	(if: not $answered)[
+		(set: $q12result to "wrong. Will you try again?")
+		(set: $answered to true)
+		(goto: "Q12 — Feedback")
+	]
+]<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_st2.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+
+
+:: Stableman — Story2 {"position":"1300,1700","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+**Stableman:** Well, there's not much left to do now, I just need to give you a saddle.
+
+**Pietro:** Right! I almsot forgot about that!
+
+**Stableman:** Look at this! This is a sella da parata, a parade saddle. It's only used on special occasions, such as today's joust. This type’s called alla moscovita. See the seat? No rigid reinforcements, and at the back it splits into two inclined flaps, that’s the mark of it.
+
+**Pietro:** How beautiful! But where are these saddles made?
+
+**Stableman:** In the North, in Tyrorl. Such saddles are also common in German and French lands.
+
+**Pietro:** And what is the material used to inlay this saddle?
+
+**Stableman:** It's ivory. Take a look at these images representing the figurative repertoire of the saddle that reprises typically courtly themes and subjects, animated by real figures of ladies, queens, and knights.
+
+**Pietro:** And what is that inscription here?
+
+**Stableman:** It's an inscription in german that reads ‘I do not rejoice, better tomorrow than today’. Don't ask me what that means.
+
+**Pietro:** Okay, so I understand that in order to get this saddle, I need to answer your questions?
+
+**Stableman:** I suppose, you're right. Now let's see how carefully you listened to me.
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_st2.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Answer the stableman's questions->Stableman — Question4]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/stableman.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: Stableman's story1 {"position":"1300,1300","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+**Stableman:** New to Signor Bentivoglio’s service, eh? What d’you need?
+
+**Pietro:** Head protection for his horse. Sir rides today.
+
+**Stableman:** Then you need the testiera. Classic Italian foundry work, feel the weight, as a bell. Forged in a narrow, almond-like profile so it cuts the air, tight to the skull. 
+
+**Pietro:** And what's this band shaped like a narrow almond through the middle for?
+
+**Stableman:** That twisted groove is tortiglione, it is merely a decorative element.
+
+Stableman turns testiera, showing how the parts flowed as one.
+
+**Stableman:** Made in a single assembly, no clumsy joins, ear guards, eye cups, and cheek plates all forged together and laid to follow the horse’s cheeks. Holds steady even when the tilt thunders.
+
+**Pietro:** And what is that fitting at the brow?
+
+**Stableman:** Here sits the rosette, that’s where we set the plume. A bit of show, aye, but it helps the crowd see who’s coming.
+
+**Pietro:** Wonderful work! I am sure that with this protection, there is no need to worry about Signor Bentivoglio's horse.
+
+**Stableman:** I suppose, you're right. Now let's see how carefully you listened to me.<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stableman_st1.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Answer the stableman's questions->Stableman — Question1]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/stableman.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: Stables {"position":"1500,1300","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+Pietro push through the stable door into warm breath and straw-sweet air. Stalls run in two rows beneath a timbered roof, tack hang in orderly ranks, and a gray charger stamp, impatient for work. From the far end a broad-shouldered stableman looks up, plucking hay from his sleeve.
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_stables.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Talk to the stableman->Stableman's story1]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/horses_in_stables.mp3?raw=true" type="audio/mp3">
+</audio>
+
+
+:: Weapons room {"position":"1700,800","size":"100,100"}
+<div style="font-size: 30px; text-align: center">
+Pietro and the guard find themselves in a room filled with weapons. Various weapons hang on the walls, artfully arranged and decorated.
+The guard lead Pietro to a rack near the wall, where a dagger hang in a craddle of oiled wood. He lifts it with both hands, as one might raise a relic.
+<style>
+tw-story {
+background-image:url("https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/img/plot/pl_weapons_room.png?raw=true");
+background-size:cover;
+background-position: center;
+}
+</style>
+<div class="cta-br">
+[[Listen to the guard's story->Guard's story2]]</div></div>
+<audio autoplay loop>
+  <source src="https://github.com/Sergpoipoip/dhmm-medieval-skeleton/raw/main/assets/sound/guard.wav?raw=true" type="audio/wav">
+</audio>
+
+
+:: StoryStylesheet [stylesheet]
+tw-story
+{
+font-family: Courier;
+font-size: 30px;
+background-color: transparent
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=MedievalSharp&display=swap");
+
+/* Style for all texts inside passages */
+tw-passage {
+    font-family: "MedievalSharp", serif !important;
+    font-size: 22px;
+  	font-weight: 400;
+    color: #fff;
+    line-height: 1.5;
+    margin: 10px;                     /* Margin around passages */
+    padding: 5px;                    /* Padding inside passages */
+    background-color: rgb(125 64 20 / 10%); /* Background with some transparency */
+    border-radius: 6px;               /* Rounded corners */
+}
+
+
+
+/* ----------- LINKS STYLE -------- */
+
+/* Default link appearance */
+tw-link {
+  font-family: "EB Garamond", serif !important;
+    font-size: 16px;
+    color: #ffff;        /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: bold;     /* Bold text */
+    padding: 5px 10px;     /* Padding around the link */
+    border-radius: 5px;    /* Rounded corners */
+    background-color: #9e8210; /* Light grey background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for links */
+tw-link:hover {
+    color: #0068d8;             /* Darker blue on hover */
+    text-decoration: none;
+}
+
+/* Visited link appearance */
+tw-link.visited {
+    color: #6c757d; /* Gray color for visited links */
+}
+
+/* Active link appearance */
+tw-link:active {
+    color: #004085;         /* Darker blue on click */
+    background-color: #c6c8ca; /* Darker grey on click */
+}
+
+/* Focused link appearance */
+tw-link:focus {
+    outline: none;          /* Remove default outline */
+    box-shadow: 0 0 0 2px #80bdff; /* Custom focus outline */
+}
+
+tw-story
+
+
+/* Example of styling the back arrow link */
+a.back {
+    color: #968686;  /* Text color */
+    background-color: #007bff;  /* Background color */
+    padding: 5px 10px;  /* Padding around the link */
+    border-radius: 4px;  /* Rounded corners */
+    text-decoration: none;  /* Remove underline */
+}
+
+a.back:hover {
+    background-color: yellow;  /* Darker background color on hover */
+}
+
+
+/* bottom-right call-to-action */
+.cta-br{
+  position: fixed;         /* stick to the viewport */
+  right: 20px;
+  bottom: 20px;
+  z-index: 10000;          /* above passage panel */
+  text-align: right;       /* keep the link right-aligned */
+}
